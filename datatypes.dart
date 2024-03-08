@@ -24,6 +24,11 @@ multiplyTwo (int a, double b) {
   int stringLength(String inputString) {
   return inputString.length;
 }
+
+ getFirstElement(List<dynamic> carList) {
+  return carList[0];
+
+ }
   
 void main() {
   addTwo(12, 15);
@@ -40,5 +45,9 @@ void main() {
   String sen = "My code";
   int count = stringLenght(sen);
   print("The length of my string is: $count");
+
+  List <dynamic> cars = ["Toyota", "Nissan", "Honda"];
+  String firstElement = getFirstElement(cars);
+  print("The first elment in the list is: $firstElement");
 
 }
